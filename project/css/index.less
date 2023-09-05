@@ -1,0 +1,590 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(1, 1, 1, .6);
+}
+
+// 清除浮动(给父级元素加)
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+// 标题背景图片公共样式
+.top {
+    height: 768px;
+    background-color: black;
+
+    h1 {
+        padding-top: 280px;
+        text-align: center;
+        line-height: 150px;
+        font-size: 120px;
+        color: #ffffff;
+        font-weight: 800;
+    }
+}
+
+// 板块内容公共样式
+.body {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: #fff6ef;
+}
+
+// 字体公共样式
+.word {
+    padding: 50px 150px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.red {
+    color: red;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+// 导语
+.daoyu {
+    .top {
+        background: url('../img/1.png') no-repeat center 0;
+        background-size: 100%;
+    }
+
+    .body {
+        background-color: #191919;
+        width: 100%;
+
+        .word {
+            padding: 50px 300px;
+            color: #ffffff
+        }
+    }
+}
+
+// part1:
+.part1 {
+    .top {
+        background: url('../img/3.png') no-repeat center 0;
+        background-size: 100%;
+    }
+
+    .body {
+
+        // 单个数字图
+        .pic {
+            margin: 0 auto;
+            width: 1067px;
+            height: 364px;
+            background: url(../img/dashujutu.jpg) no-repeat;
+            background-size: 100%;
+        }
+
+        // 大地图map
+        .map {
+            margin: auto;
+            width: 700px;
+            height: 520px;
+        }
+
+        // 科普图
+        .kepu {
+            margin: 0 auto;
+            width: 1200px;
+            height: 820px;
+            background: url(../img/keputu.jpg) no-repeat;
+            background-size: 100%;
+            border-radius: 30px;
+        }
+
+        // 柱状图:全国累计高温中暑病例
+        .bar {
+            margin: 0 auto;
+            width: 784px;
+            height: 634px;
+        }
+
+        // 户外工作者调查图组
+        .bar2 {
+            margin: 100px auto 0;
+            width: 800px;
+
+            .up {
+                margin: 20px auto;
+                padding: 0 25px;
+                width: 700px;
+                background-color: red;
+                border-radius: 30px;
+
+                h2 {
+                    display: inline-block;
+                    margin: 25px auto;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 40px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+
+            .mid {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .chart {
+                height: 576px;
+            }
+        }
+
+        .bar3 {
+            margin: 100px auto 0;
+            width: 784px;
+
+            .up {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .chart {
+                margin: 0 auto;
+                width: 100%;
+                height: 576px;
+            }
+        }
+    }
+}
+
+// part2:
+.part2 {
+    .top {
+        background: url('../img/9.png') no-repeat center 0;
+        background-size: 100%;
+    }
+
+    .body {
+
+        // 年龄图
+        .old {
+            margin: 0 auto;
+            width: 600px;
+            height: 510px;
+        }
+
+        // 词云图:工作
+        .wordcloud_job {
+            display: flex;
+
+            .chart {
+                flex: 1;
+
+                .name1 {
+                    margin-left: 170px;
+                    font-size: 18px;
+                    color: rgba(1, 1, 1, .6);
+                    line-height: 24px;
+                }
+
+                .wordcloud1 {
+                    width: 455px;
+                    height: 489px;
+                }
+            }
+
+            .word1 {
+                flex: 2;
+                padding: 100px 200px 80px 100px;
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+
+        // 词云图:地点
+        .wordcloud_loc {
+            display: flex;
+
+            .word2 {
+                flex: 2;
+                padding: 100px 200px 80px 100px;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .chart {
+                flex: 1;
+
+                .name2 {
+                    padding-right: 130px;
+                    font-size: 18px;
+                    color: rgba(1, 1, 1, .6);
+                    line-height: 24px;
+                    text-align: center;
+                }
+
+                .wordcloud2 {
+                    padding-right: 150px;
+                    width: 455px;
+                    height: 489px;
+                }
+            }
+        }
+
+        // 公司属性
+        .gongsi {
+            margin: 0 auto;
+            width: 602px;
+            height: 512px;
+        }
+
+    }
+}
+
+// part3
+.part3 {
+    .top {
+        background: url('../img/14.png') no-repeat center 0;
+        background-size: 100%;
+    }
+
+    .body {
+        .siwang {
+            margin: 0 auto;
+            width: 910px;
+            height: 464px;
+        }
+
+        .shangcan {
+            margin: 0 auto;
+            width: 1200px;
+            height: 1320px;
+            background: url(../img/shangcan.jpg) no-repeat;
+            background-position: 0 -200px;
+            background-size: 100%;
+            border-radius: 30px;
+        }
+
+        .deadtime {
+            display: inline-block;
+            margin-left: 100px;
+            margin-right: 100px;
+            width: 560px;
+            height: 400px;
+            background: url(../img/deadtime.jpg) no-repeat;
+            background-size: contain;
+        }
+
+        .img {
+            display: inline-block;
+            width: 500px;
+            height: 400px;
+            background: url(../img/hot.jpg) no-repeat;
+            background-size: contain;
+        }
+
+        .shenti {
+            margin: auto;
+            width: 1200px;
+            height: 900px;
+            background: url(../img/shenti.jpg) no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+// part4
+.part4 {
+    .top {
+        background: url('../img/19.png') no-repeat center 0;
+        background-size: 100%;
+    }
+
+    .body {
+        .pic2 {
+            position: relative;
+            margin: 0 auto;
+            width: 1350px;
+            height: 1700px;
+
+            img {
+                position: absolute;
+                left: 80px;
+                top: 200px;
+                width: 400px;
+                height: 400px;
+            }
+
+            .box {
+                margin-bottom: 100px;
+                position: absolute;
+                right: 92px;
+                top: 72px;
+
+                .name {
+                    font-size: 60px;
+                    line-height: 65px;
+                    font-weight: bold;
+                    color: #bb5a22;
+                    margin-bottom: 40px;
+                }
+
+                span {
+                    color: #c84e29;
+                }
+
+                .wenzibox {
+                    padding: 0 10px 0 10px;
+                    width: 640px;
+                    height: 200px;
+                    overflow: hidden;
+
+                    .wenzi {
+                        margin-left: 50px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        // color: #fff;
+                        animation: move1 8s infinite linear;
+
+                        &:hover {
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+
+                &:hover .wenzi {
+                    animation-play-state: paused;
+                }
+            }
+
+            .box2 {
+                margin-bottom: 200px;
+                position: absolute;
+                left: 92px;
+                top: 760px;
+
+                .name2 {
+                    font-size: 60px;
+                    line-height: 65px;
+                    font-weight: bold;
+                    color: #bb5a22;
+                    margin-bottom: 40px;
+                }
+
+                span {
+                    color: #c84e29;
+                }
+
+                .wenzibox2 {
+                    margin-left: 50px;
+                    padding: 0 10px 0 10px;
+                    width: 600px;
+                    height: 120px;
+                    overflow: hidden;
+
+                    .wenzi2 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        // color: #fff;
+                        animation: move2 8s infinite linear;
+
+                        &:hover {
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+
+                &:hover .wenzi2 {
+                    animation-play-state: paused;
+                }
+            }
+
+            .box3 {
+                margin-bottom: 200px;
+                position: absolute;
+                right: 92px;
+                top: 1100px;
+
+                .name3 {
+                    font-size: 60px;
+                    line-height: 65px;
+                    font-weight: bold;
+                    color: #bb5a22;
+                    margin-bottom: 40px;
+                }
+
+                span {
+                    color: #c84e29;
+                }
+
+                .wenzibox3 {
+                    margin-left: 50px;
+                    padding: 0 10px 0 10px;
+                    width: 600px;
+                    height: 190px;
+                    overflow: hidden;
+
+                    .wenzi3 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        // color: #fff;
+                        animation: move3 10s infinite linear;
+
+                        &:hover {
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+
+                &:hover .wenzi3 {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+}
+
+// foot
+.foot {
+    .body {
+        .banquan {
+            padding: 100px 100px;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(1, 1, 1, .6);
+
+            .cankao {
+                text-align: center;
+            }
+
+            .people {
+                margin-top: 80px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 波浪
+.wave {
+    position: relative;
+    margin: 0;
+    background-color: orange;
+    height: 300px;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 15vh;
+        transform: translate(-50%, 0) rotateZ(0);
+        width: 300vw;
+        height: 310vw;
+        border-radius: 45%;
+        background-color: #fff;
+        animation: wave 10s linear infinite;
+        z-index: 1;
+    }
+
+    &::after {
+        bottom: 12vh;
+        opacity: .5;
+        z-index: 1;
+    }
+}
+
+// 动画
+@keyframes wave {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, 2%) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, 2%) rotateZ(360deg);
+    }
+}
+
+@keyframes move1 {
+    to {
+        transform: translateY(-320px);
+    }
+}
+
+@keyframes move2 {
+    to {
+        transform: translateY(-220px);
+    }
+}
+
+@keyframes move3 {
+    to {
+        transform: translateY(-434px);
+    }
+}
+
+// 导航栏
+.aside {
+    position: fixed;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.item {
+    margin-bottom: 2px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: red 2px solid;
+    background-color: orange;
+    color: #fff;
+    overflow: hidden;
+    transition: all .1s;
+}
+
+.item:hover {
+    width: 100%;
+}
+
+.active {
+    background-color: #f4845f;
+    border: #c32f27 4px solid;
+    color: #fff;
+}
+
+.iconfont {
+    font-size: 30px;
+}
+
+.aside .item span {
+    vertical-align: top;
+}

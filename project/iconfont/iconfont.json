@@ -1,0 +1,37 @@
+{
+  "id": "3668745",
+  "name": "数据新闻",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13479123",
+      "name": "白天",
+      "font_class": "B",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "13479130",
+      "name": "异常",
+      "font_class": "B1",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "13479144",
+      "name": "火热",
+      "font_class": "B2",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "13479170",
+      "name": "提示",
+      "font_class": "B3",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    }
+  ]
+}
